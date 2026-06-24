@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Rock Paper Scissors</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="photos/title-icon.png">
+    </head>
+    
+    <body>
+
+        <header class="header">
+                <h1 class="title">
+                    Rock🪨 Paper📄 <br class="mobile-break">
+                    Scissors✂️
+                </h1>
+        </header>
+
+        <main class="main">
+            <div class="game-card">
+
+                <h3 class="select-title">
+                    Select your weapon
+                </h3>
+
+                <p class="keyboard-info">
+                    R = Rock | P = Paper | S = Scissors
+                </p>
+
+                <section class="button-container">
+
+                    <div class="move-button" onclick="playGame('rock')">✊<br><span>Rock</span></div>
+
+                    <div class="move-button" onclick="playGame('paper')">✋<br><span>Paper</span></div>
+
+                    <div class="move-button" onclick="playGame('scissors')">✌️<br><span>Scissors</span></div>
+
+                </section>
+
+                <section class="hands-wrapper">
+
+                    <div class="labels">
+                        <span>You</span>
+                        <span>Computer</span>
+                    </div>
+
+                    <div class="hands">
+
+                        <div class="js-player-move move-display">✊</div>
+
+                        <div class="js-computer-move move-display">✊</div>
+
+                    </div>
+
+                </section>
+
+                <h3 class="js-result result">
+                    Make your move!
+                </h3>
+
+                <section class="score-box">
+                    <span class="wins"></span>
+                    <span>|</span>
+                    <span class="losses"></span>
+                    <span>|</span>
+                    <span class="draws"></span>
+                </section>
+
+                <section class="reset-box">
+                    <button onclick="resetGame()" class="reset-button">
+                        Reset Game
+                    </button>
+                </section>
+
+                <script src="script.js"></script>
+
+            </div>
+        </main>
+
+        <footer class="footer">
+
+                <span>Built by <strong>Paidi Satya Sai Abhiram</strong></span>
+
+                <span class="desktop-dot dot">•</span>
+                <br class="mobile-break-footer break">
+
+                <span>Koneru Lakshmaiah Education Foundation, Vijayawada</span>
+
+                <br>
+                
+                <span>© 2026 All Rights Reserved</span>
+
+                <span class="desktop-dot">•</span>
+                <br class="mobile-break-footer">
+
+                <span>Andhra Pradesh, India</span>
+        </footer>
+    </body>
+</html>
